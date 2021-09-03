@@ -1,0 +1,17 @@
+*{
+    transition: 0.2s;
+}
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    --white: white;
+    --orange: #c5a47e;
+}
+li{
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+}
