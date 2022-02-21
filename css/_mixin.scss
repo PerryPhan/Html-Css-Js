@@ -1,3 +1,23 @@
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px;  
+
+@mixin mobile { @media (max-width: #{$mobile -width - 1px}) {     
+  @content;   
+ } 
+}  
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+   @content;   
+ } 
+}  
+
+@mixin desktop {   @media (min-width: #{$desktop-width}) {     
+  @content;  
+ } 
+}
 @mixin vertical-bar {
     .vertical-bar {
         position: relative;
@@ -66,188 +86,4 @@
 
         }
     }
-}
-
-@mixin g-carousel {
-    .g-carousel {
-        position: relative;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(../images/slide1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        --li_witdth: 20%;
-        // --li_background_position: 14%; // desktop
-        --li_background_position: 4%;
-
-        .g-carousel-speamless-slides {
-            width: 100%;
-            height: 100%;
-
-            .g-carousel-speamless-slide {
-                width: 100%;
-                height: 100%;
-
-                ul {
-                    padding: 0;
-                    margin: 0;
-                    width: 100%;
-                    height: 100%;
-
-                    li {
-                        // width: var(--li_witdth);
-                        width: 20%;
-                        height: 100%;
-                        background-image: url(../images/slide1.jpg);
-                        background-position: calc(50% + (var(--li_background_position) * -3)) center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        transition: 2s;
-                    }
-
-                    &:hover li:nth-child(1) {
-                        background-position: calc(50% + (var(--li_background_position) * -3)) center;
-                        // opacity: 0;
-                    }
-
-                    &:hover li:nth-child(2) {
-                        background-position: calc(50% + (var(--li_background_position) * -2)) center;
-                        // opacity: 0;
-                    }
-
-                    &:hover li:nth-child(3) {
-                        background-position: calc(50% + (var(--li_background_position) * -1)) center;
-                        // opacity: 0;
-                    }
-
-                    &:hover li:nth-child(4) {
-                        background-position: calc(50% + (var(--li_background_position) * 0)) center;
-                        // opacity: 0;
-                    }
-
-                    &:hover li:nth-child(5) {
-                        background-position: calc(50% + (var(--li_background_position) * 1)) center;
-                        // opacity: 0;
-                    }
-
-                    &:hover li:nth-child(6) {
-                        background-position: calc(50% + (var(--li_background_position) * 2)) center;
-                        // opacity: 0;
-                    }
-
-                }
-            }
-
-            .g-carousel-common-text {
-                position: absolute;
-                top: 55%;
-                right: 8px;
-                width: 100%;
-                max-width: 250px;
-                transform: translateY(-50%);
-                color: white;
-                text-align: right;
-
-                .split-text-box {
-                    margin: 15px 0;
-                    overflow: hidden;
-
-                    .split-text {
-                        span {
-                            width: 20px;
-                            max-width: 10px;
-                            font-size: 20px;
-                        }
-                    }
-                }
-
-                .description-box {
-                    --font-size: 10px;
-                    height: calc(--font-size * 3);
-                    overflow: hidden;
-                    margin: 15px 0;
-
-                    .description {
-                        padding: 0;
-                        margin: 0;
-                        font-size: var(--font-size);
-                        transition: 1s;
-                    }
-                }
-
-                .btn-box {
-                    overflow: hidden;
-
-                    .learn-more-btn {
-                        background-color: #c5a47e;
-                        border-radius: 20px;
-                        font-size: 7px;
-                        margin: 0;
-                        padding: 2px 16px;
-                        transition: 1s;
-                    }
-                }
-            }
-        }
-
-        .g-carousel-button-group {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            margin: 20px 0;
-            padding: 0;
-
-            .g-carousel-button {
-                color: var(--white);
-                display: flex;
-                align-items: center;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-
-                &.prev {
-                    justify-content: flex-start;
-                }
-
-                &.next {
-                    justify-content: flex-end;
-                }
-
-                span {
-                    font-weight: 500;
-                }
-
-                i {
-                    color: rgba(255, 255, 255, .2);
-                    padding: 0 10px;
-                    font-weight: lighter;
-                }
-            }
-        }
-    }
-}
-
-/* Mixin */
-/* Set các giá trị với màn hình tương ứng */
-$mobile-width: 480px; 
-$tablet-width: 768px; 
-$desktop-width: 1024px;  
-
-@mixin mobile { @media (max-width: #{$mobile -width - 1px}) {     
-  @content;   
- } 
-}  
-
-@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
-   @content;   
- } 
-}  
-
-@mixin desktop {   @media (min-width: #{$desktop-width}) {     
-  @content;  
- } 
 }
