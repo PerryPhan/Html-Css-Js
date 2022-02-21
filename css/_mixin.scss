@@ -19,71 +19,7 @@ $desktop-width: 1024px;
  } 
 }
 @mixin vertical-bar {
-    .vertical-bar {
-        position: relative;
-        width: 20%;
-        height: 100%;
-
-        .social {
-            position: absolute;
-            top: 0px;
-            height: 100%;
-            width: 100%;
-
-            .social-title,
-            .social-content {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: center;
-                height: 50%;
-                width: 100%;
-                padding: 10px 0;
-
-                .rotate-90-text {
-                    position: absolute;
-                    bottom: 0px;
-                    left: 0px;
-                    border: 1px solid white;
-                    width: 300px;
-                    transform: rotate(-90deg);
-                    letter-spacing: 5px;
-                    font-weight: bold;
-                }
-
-                .social-list {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 0;
-                    margin: 0;
-
-                    li {
-                        padding: 0;
-                        margin: 5px 0;
-                        transform: scale(.55);
-
-                        a {
-                            padding: 0;
-                            margin: 0;
-                            color: var(--white);
-                            opacity: 0.2;
-                        }
-                    }
-
-                }
-
-                .line {
-                    width: 1.2px;
-                    height: 20px;
-                    margin: 10px 0;
-                    background-color: var(--white);
-                    opacity: 0.2;
-                }
-            }
-
-        }
+    .any{
+        box-sizing: border-box;
     }
 }
