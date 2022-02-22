@@ -1,0 +1,178 @@
+    @import 'variables';
+    @import 'mixin';
+    @import 'animation';
+    // FE_exercise_1
+    .bg-custom-black {
+        background-color: $black;
+    }
+    
+    .letter-spacing-10 {
+        letter-spacing: 2px;
+    }
+    
+    .bg-custom-blue {
+        background-color: $blue;
+    }
+    
+    .img-limit {
+        object-fit: cover;
+    }
+    
+    .bg-custom-lightblack {
+        background-color: $lightblack;
+    }
+    
+    .bg-custom-grey {
+        background-color: $grey;
+    }
+    
+    .text-custom-blue {
+        color: $blue;
+    }
+    
+    .font-weight-600 {
+        font-weight: 600;
+    }
+    
+    .font-weight-500 {
+        font-weight: 500;
+    }
+    
+    .w-25 {
+        width: 25%;
+    }
+    
+    .hr-light {
+        background-color: $white;
+    }
+    
+    .social {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        .social-item {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: black;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .phone-display {
+        font-size: 1rem;
+    }
+    
+    .right {
+        left: 100%;
+    }
+    
+    .hambuger-menu {
+        width: 20px;
+        height: 3px;
+        background-color: $white;
+        position: relative;
+        $distance: 6px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -$distance;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: $distance;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+        }
+    }
+    
+    .fx-auto {
+        @include tablet {
+            flex: 1 0 auto;
+        }
+        @include desktop {
+            flex: 1 0 auto;
+        }
+    }
+    
+    .z-index-10 {
+        z-index: 100000 !important;
+    }
+    
+    .menu-exit-background {
+        background-color: rgba(34, 34, 34, 0.897);
+    }
+    
+    .custom-nav {
+        width: 90%;
+        li {
+            color: $black;
+            &:hover {
+                background: $lightblack;
+                color: $white;
+            }
+            padding: 30px 15px;
+            margin-top: 1rem;
+            background-color: $white;
+            border-radius: 15px;
+        }
+    }
+    
+    .w-65px {
+        width: 65px;
+    }
+    
+    .line {
+        background-color: rgba(0, 0, 0, .3);
+        height: .1rem;
+        width: 100%;
+    }
+    
+    .w-sm-30 {
+        @include mobile {
+            width: 100%;
+        }
+        width:30%;
+    }
+    
+    .max-width-sm-500 {
+        max-width: 500px;
+    }
+    
+    .max-width-sm-600 {
+        max-width: 600px;
+    }
+    /* width */
+    
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        background: #252525;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }

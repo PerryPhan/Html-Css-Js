@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+.bg-custom-black {
+  background-color: #1A1A1A;
+}
+
+.letter-spacing-10 {
+  letter-spacing: 2px;
+}
+
+.bg-custom-blue {
+  background-color: #044A8D;
+}
+
+.img-limit {
+  object-fit: cover;
+}
+
+.bg-custom-lightblack {
+  background-color: #272727;
+}
+
+.bg-custom-grey {
+  background-color: #F2F2F2;
+}
+
+.text-custom-blue {
+  color: #044A8D;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.hr-light {
+  background-color: #FFFFFF;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.social .social-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social .social-item i {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.phone-display {
+  font-size: 1rem;
+}
+
+.right {
+  left: 100%;
+}
+
+.hambuger-menu {
+  width: 20px;
+  height: 3px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.hambuger-menu::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.hambuger-menu::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fx-auto {
+    flex: 1 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .fx-auto {
+    flex: 1 0 auto;
+  }
+}
+
+.z-index-10 {
+  z-index: 100000 !important;
+}
+
+.menu-exit-background {
+  background-color: rgba(34, 34, 34, 0.897);
+}
+
+.custom-nav {
+  width: 90%;
+}
+.custom-nav li {
+  color: #1A1A1A;
+  padding: 30px 15px;
+  margin-top: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+.custom-nav li:hover {
+  background: #272727;
+  color: #FFFFFF;
+}
+
+.w-65px {
+  width: 65px;
+}
+
+.line {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 0.1rem;
+  width: 100%;
+}
+
+.w-sm-30 {
+  width: 30%;
+}
+@media (max-width: 479px) {
+  .w-sm-30 {
+    width: 100%;
+  }
+}
+
+.max-width-sm-500 {
+  max-width: 500px;
+}
+
+.max-width-sm-600 {
+  max-width: 600px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #252525;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*# sourceMappingURL=main.css.map */
