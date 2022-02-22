@@ -20,9 +20,9 @@
             <div class="position-absolute fixed-top d-flex align-items-center flex-column">
                 <button class="btn btn p-3 exit-btn align-self-start"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                 <ul class="text-white custom-nav outer-zone">
-                    <li><a href="#" class="a">About Us</a></li>
-                    <li><a href="#" class="a">Investor Relations</a></li>
-                    <li><a href="#" class="a">Sustainability</a></li>
+                    <li class="menu-item"><a href="#" class="a">About Us</a></li>
+                    <li class="menu-item"><a href="#" class="a">Investor Relations</a></li>
+                    <li class="menu-item"><a href="#" class="a">Sustainability</a></li>
                 </ul>
             </div>
         </div>
@@ -220,20 +220,14 @@
         })
         $('.hambuger-menu').on('click', () => toggleMobileMenu('.mobile-menu'))
         $('.outer-zone').on('click', (e) => {
-            toggleMobileMenu('.mobile-menu')
+            var menuitem = $(".menu-item");
+
+            if (!menuitem.is(e.target) && menuitem.has(e.target).length === 0) {
+                toggleMobileMenu('.mobile-menu')
+            }
+
         })
     </script>
 </body>
-
-</html>
-
-</html>
-
-</html>
-</body>
-
-</html>
-
-</html>
 
 </html>

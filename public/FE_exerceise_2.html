@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/samsonite_logo.png" type="image/x-icon" />
+    <title>Samsonite - FE exercise 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <div class="clock-layout-container position-absolute h-100 w-100 fixed-top z-index-10">
+        <div class="position-relative menu-exit-background outer-zone h-100 w-100 ">
+            <div class="clock-layout shadow p-3 mb-5 position-fixed center-screen bg-custom-light w800h600 d-flex align-items-center justify-content-center">
+                <div class="comming-soon-layout bg-white ">
+                    <div class="title text-uppercase h2 text-center">
+                        comming soon
+                    </div>
+                    <div class="clock mt-3 row">
+                        <div class="clock-column col-4">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="title text-capitalize">hours</div>
+                                <div class="content hour d-flex">
+                                    <div class="number">0</div>
+                                    <div class="number">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clock-column col-4">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="title">minutes</div>
+                                <div class="content minute d-flex">
+                                    <div class="number">0</div>
+                                    <div class="number">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clock-column col">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="title">seconds</div>
+                                <div class="content second d-flex">
+                                    <div class="number end">0</div>
+                                    <div class="number end">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu position-absolute h-100 w-100 fixed-top z-index-10 d-none d-sm-none">
+        <div class="position-relative menu-exit-background outer-zone h-100 w-100 ">
+            <div class="position-absolute fixed-top d-flex align-items-center flex-column">
+                <button class="btn btn p-3 exit-btn align-self-start"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                <ul class="text-white custom-nav">
+                    <li class="menu-item"><a href="#" class="a">About Us</a></li>
+                    <li class="menu-item"><a href="#" class="a">Investor Relations</a></li>
+                    <li class="menu-item"><a href="#" class="a">Sustainability</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <header class="position-relative container-fluid bg-custom-black ">
+        <div class=" position-absolute h-100 d-flex justify-content-center flex-column align-items-center text-white ">
+            <div class="hambuger-menu d-sm-none ">
+
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center justify-content-sm-start py-3 ">
+            <div class="fx-auto "><img class=" " width=120 src="./img/samsonite_logo_text.png " alt="logo "></div>
+
+            <div class="contact-us d-none d-sm-flex text-white ">
+                <span><i class="fa fa-comment-o " aria-hidden="true "></i></span>
+                <span class="pl-1 ">Contact Us</span>
+            </div>
+        </div>
+    </header>
+    <div class="d-none d-sm-flex justify-content-center align-items-center bg-custom-blue ">
+        <ul class="nav text-uppercase text-white letter-spacing-10 py-2 ">
+            <li class=" mr-5 "><a href="# " class="a ">About Us</a></li>
+            <li class=" mr-5 "><a href="# " class="a ">Investor Relations</a></li>
+            <li class=" mr-5 "><a href="# " class="a ">Sustainability</a></li>
+        </ul>
+    </div>
+    <main class="container-fluid p-0 m-0 ">
+        <div class="row m-0 ">
+            <img class="img-fluid w-100 " src="./img/samsonite_banner.png " alt="banner ">
+        </div>
+        <div class="container title-field ">
+            <div class="breadcrump py-3 text-custom-blue font-weight-600 ">
+                <span class=" "><a href="# " class="a ">Home</a></span>
+                <span class="px-2 "><i class="fa fa-chevron-right " aria-hidden="true "></i></span>
+                <span class=" "><a href="# " class="a ">Contact Us</a></span>
+            </div>
+            <div class="text-center h2 p-3 text-custom-blue font-weight-500 text-uppercase ">Contact Us</div>
+        </div>
+        <!-- .container end -->
+        <div class="container-fluid content-field py-3 px-2 m-0 py-sm-5 bg-custom-grey ">
+            <div class="sub-container container ">
+                <div class="d-sm-flex pt-3 align-items-center flex-column ">
+                    <div class="px-3 m-0 w-sm-30 ">
+                        <div class="d-flex ">
+                            <div class="font-weight-bold w-65px ">By Phone:</div>
+                            <div class=" ">+852 2422 2611 in Hong Kong</div>
+                        </div>
+                        <div class="mt-2 d-flex ">
+                            <div class="font-weight-bold w-65px ">By Email:</div>
+                            <div class=" ">investorrelations@samsonite.com</div>
+                        </div>
+                    </div>
+                    <div class="line my-3 max-width-sm-600 "></div>
+                </div>
+
+                <div class="address-box container max-width-sm-500 ">
+                    <div class="row container m-0 p-0 pt-3 pb-4 bg-white ">
+                        <div class="title col-12 font-weight-bold ">
+                            Joint Corporate Headquaters and Registered Office in Luxembourg
+                        </div>
+                        <div class="content col-12 pt-2 ">
+                            <div class=" ">13-15 avenue de la Liberté.</div>
+                            <div class="pt-2 ">L-1931 Luxembourg</div>
+                        </div>
+                        <div class="col-12 pt-3 ">
+                            <a href="# " class="font-weight-500 ">VIEW ON MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .container-fluid end -->
+        </div>
+        <!-- .sub-container end -->
+    </main>
+    <footer class="container-fluid bg-custom-lightblack text-white p-4 ">
+        <div class="row m-0 ">
+            <div class="footer-item col-12 col-sm-3 ">
+                <hr class="d-md-none hr-light ">
+                <div class="title ">
+                    <div class="position-relative font-weight-600 pr-1 ">
+                        Joint Corporate Headquaters and Registered Office in Luxembourg
+                        <div class="position-absolute w-100 h-100 fixed-top d-sm-none d-flex justify-content-end align-items-center ">
+                            <button class="btn btn-link text-white font-weight-600 p-0 ">
+                                <i class="fa fa-plus " aria-hidden="true "></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pl-3 p-sm-0 d-none d-sm-block ">
+                    <div class="mt-2 ">13-15 avenue de la Liberté.</div>
+                    <div class="mt-2 ">L-1931 Luxembourg</div>
+                </div>
+            </div>
+            <div class="footer-item col-12 col-sm-3 ">
+                <hr class="d-md-none hr-light ">
+                <div class="title ">
+                    <div class="position-relative font-weight-600 ">
+                        Joint Corporate Headquaters
+                        <div class="position-absolute w-100 h-100 fixed-top d-sm-none d-flex justify-content-end align-items-center ">
+                            <button class="btn btn-link text-white font-weight-600 p-0 ">
+                                <i class="fa fa-plus " aria-hidden="true "></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content pl-3 p-sm-0 d-none d-sm-block ">
+                    <div class="mt-2 ">575 West Street, Suite 110.</div>
+                    <div class="mt-2 ">Mansfield, MA 02048, USA</div>
+                </div>
+            </div>
+            <div class="footer-item col-12 col-sm-3 ">
+                <hr class="d-md-none hr-light ">
+                <div class="title ">
+                    <div class="position-relative font-weight-600 ">
+                        Principal Place of Business in Hong Kong
+                        <div class="position-absolute w-100 h-100 fixed-top d-sm-none d-flex justify-content-end align-items-center ">
+                            <button class="btn btn-link text-white font-weight-600 p-0 btn-openbox ">
+                                <i class="fa fa-plus " aria-hidden="true "></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content pl-3 p-sm-0 d-none d-sm-block ">
+                    <div class="mt-2 ">25/F, Tower 2, The Gateway,</div>
+                    <div class="mt-2 ">Harbour City, 25 Canton Road</div>
+                    <div class="mt-2 ">Tsimshatsul, Kowloon, Hong Kong</div>
+                </div>
+            </div>
+            <div class="footer-item col px-sm-2 text-sm-right ">
+                <hr class="d-md-none hr-light ">
+                <div class="title ">Call us on <span class="phone-display "> +852 2422 2611 </span></div>
+                <hr class="d-md-none hr-light ">
+            </div>
+        </div>
+        <!-- end of row -->
+        <div class="row m-0 mt-sm-5 ">
+            <div class="col-12 col-sm-6 row m-sm-0 ">
+                <div class="col-12 p-sm-0 ">
+                    <img class=" " width=120 src="./img/samsonite_logo_text.png " alt="logo ">
+                </div>
+                <div class="copyright col-sm-12 mt-3 p-sm-0 font-weight-600 ">
+                    Copyright © 2021 Samsonite IP Holdings S.à r.l. All right reserved.
+                </div>
+            </div>
+            <div class="social col-12 col-sm-6 d-flex justify-content-sm-end mt-4 m-sm-0 pl-3 pl-sm-0 ">
+                <div class="social-item mr-4 ">
+                    <i class="fa fa-facebook " aria-hidden="true "></i>
+                </div>
+                <div class="social-item mr-4 ">
+                    <i class="fa fa-twitter " aria-hidden="true "></i>
+                </div>
+                <div class="social-item ">
+                    <i class="fa fa-instagram " aria-hidden="true "></i>
+                </div>
+            </div>
+        </div>
+        <!-- end of row -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#myModal').modal('show');
+        });
+    </script>
+
+    <script>
+        function toggleOpenBox(fa) {
+            if (fa.hasClass('fa-plus')) {
+                fa.removeClass('fa-plus')
+                fa.addClass('fa-minus')
+                return true
+            }
+            fa.removeClass('fa-minus')
+            fa.addClass('fa-plus')
+            return false;
+        }
+
+        function toggleMobileMenu(selector) {
+            // Add animation later
+            $(selector).toggleClass('d-none')
+        }
+
+        $('.footer-item .title').on('click', function() {
+            let fa = ($(this).find('.fa'))
+            let content = $(this).parent().find('.content');
+
+            if (toggleOpenBox(fa)) {
+                // Add animation later
+                $(content).removeClass('d-none');
+            } else {
+                // Add animation later
+                $(content).addClass('d-none');
+            }
+        })
+        $('.hambuger-menu').on('click', () => {
+            toggleMobileMenu('.mobile-menu')
+
+        })
+        $('.outer-zone').on('click', (e) => {
+            var menuitem = $(".menu-item");
+            var clocklayout = $('.clock-layout');
+
+            if (!menuitem.is(e.target) && menuitem.has(e.target).length === 0) {
+                toggleMobileMenu('.mobile-menu')
+            }
+
+            if (!clocklayout.is(e.target) && clocklayout.has(e.target).length === 0) {
+                toggleMobileMenu('.clock-layout-container')
+            }
+        })
+
+        $(document).ready(function() {
+            clockUpdate('29-Feb-2022');
+            setInterval(clockUpdate, 1000, ['29-Feb-2022']);
+        })
+
+        function setNumbers(selector, value) {
+            let numbers = $(selector).children()
+            let strValue = value + '';
+            for (let i = 0; i <= 1; i++) {
+                $(numbers[i]).text(strValue[i])
+            }
+
+        }
+
+
+        function clockUpdate(dueDate) {
+            var date = new Date(),
+                dateValue = (Date.parse(date) / 1000);
+            var dueDateValue = (Date.parse(dueDate) / 1000);
+            var timeLeft = dueDateValue - dateValue
+
+            var days = Math.floor(timeLeft / 86400);
+            var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+            var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+            if (hours < "10") {
+                hours = "0" + hours;
+            }
+            if (minutes < "10") {
+                minutes = "0" + minutes;
+            }
+            if (seconds < "10") {
+                seconds = "0" + seconds;
+            }
+
+            setNumbers('.hour', hours)
+            setNumbers('.minute', minutes)
+            setNumbers('.second', seconds)
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
