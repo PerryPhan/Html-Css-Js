@@ -190,12 +190,13 @@
     
     .clock-column {
         $top: 60%;
+        position: relative;
         &::after,
         &::before {
             content: '';
             position: absolute;
             top: $top;
-            right: -3px;
+            right: -25px;
             width: 8px;
             height: 8px;
             background-color: #818181c9;
@@ -211,6 +212,7 @@
                 display: none;
             }
         }
+        .content {}
         .title {
             text-transform: capitalize;
             font-size: 1.5rem;
